@@ -1,0 +1,42 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font classes */
+.monserrat-regular, html {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.monserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.monserrat-regular-italic {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.monserrat-bold-italic {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* minimal palette */
+
+:root {
+    --col-1: #3E333F;
+    --col-2: #FC4442;
+    --col-3: #F0E19E;
+    --col-4: #F2F2F2;
+}
+
+/* minimal settings */
+
+html {
+    color: var(--col-1);
+}
