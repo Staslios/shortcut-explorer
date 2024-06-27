@@ -1,13 +1,9 @@
 <script>
-  import Button from "./components/Button.svelte";
-  import Keyboard from "./components/Keyboard.svelte";
-  import Title from "./components/Title.svelte";
+  import Header from "./layout/Header.svelte";
 </script>
 
+<Header/>
 
-<Title/>
-<Button buttonValue="A"/>
-<Keyboard/>
 
 
 <style>

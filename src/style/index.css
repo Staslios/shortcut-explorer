@@ -33,8 +33,15 @@
     --col-2: #fb0000;
     --col-3: #F0E19E;
     --col-4: #F2F2F2;
-    --col-5: #F0F0F0;
     --col-6: #8e8e8e;
+
+    --size-0: 12px;
+    --size-1: 14px;
+    --size-2: 16px;
+    --size-3: 18px;
+    --size-4: 20px;
+    --size-5: 24px;
+    --size-6: 30px;
 }
 
 /* minimal settings */
