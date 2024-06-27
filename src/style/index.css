@@ -30,9 +30,11 @@
 
 :root {
     --col-1: #3E333F;
-    --col-2: #FC4442;
+    --col-2: #fb0000;
     --col-3: #F0E19E;
     --col-4: #F2F2F2;
+    --col-5: #F0F0F0;
+    --col-6: #8e8e8e;
 }
 
 /* minimal settings */

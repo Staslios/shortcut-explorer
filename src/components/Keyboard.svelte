@@ -15,7 +15,6 @@
     }
 
     console.log(`You pressed: ${key}`);
-    console.log($pressedKeys)
   }
 
   function handleKeyUp(event) {
@@ -28,7 +27,6 @@
     }
 
     console.log(`You released: ${key}`);
-    console.log($pressedKeys)
   }
 
   // adds the event listener when the component is mounted
@@ -49,7 +47,7 @@
     {#each KEYBOARD as row}
         <div class="row">
             {#each row as key}
-                <Button buttonDesc={key}/>
+                <Button buttonValue={key}/>
             {/each}
         </div>
     {/each}
