@@ -2,7 +2,6 @@ export default [
   {
     keys: ['ctrl', 'c'],
     desc: "Copy",
-    keywords: ["copy", "copies"]
   },
   {
     keys: ['ctrl', 'v'],
@@ -11,5 +10,9 @@ export default [
   {
     keys: ['ctrl', 'x'],
     desc: "Cut"
+  },
+  {
+    keys: ['windows', 'l'],
+    desc: "Lock computer"
   }
 ]
