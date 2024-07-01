@@ -1,35 +1,18 @@
 <script>
-  import WIN_SHORTCUTS from "../constants/WIN_SHORTCUTS.js";
-
-
-  export const listShortcuts = WIN_SHORTCUTS
-
+    export let desc = '';
+    export let keys = [];
 </script>
 
-
-<ul>
-    {#each listShortcuts as shortcut}
-        <li>
-            <h3>{shortcut.desc}</h3>
-            <div>
-                {#each shortcut.keys as key}
-                    <span>{key}</span>
-                {/each}
-            </div>
-        </li>
-    {/each}
-</ul>
+<li>
+    <h3>{desc}</h3>
+    <div>
+        {#each keys as key (key)}
+            <span>{key}</span>
+        {/each}
+    </div>
+</li>
 
 <style>
-    ul {
-        list-style-type: none;
-        margin: 40px 100px;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
     li {
         border: 1px solid var(--col-6);
         border-radius: 6px;

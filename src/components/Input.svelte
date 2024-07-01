@@ -1,10 +1,14 @@
 <script>
-    export const inputType = 'search'
+    import { searchedKey } from "../store/store.js";
+
     export const placeholder = 'Type something here'
 </script>
 
-<input type={inputType}
+
+<input type='search'
+       bind:value={$searchedKey}
        placeholder={placeholder} />
+
 
 <style>
     input {
