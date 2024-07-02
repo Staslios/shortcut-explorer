@@ -6,8 +6,9 @@
 
 <style>
     h1 {
+        padding: 22px;
         font-size: var(--size-5);
         font-weight: bold;
-        color: var(--col-1);
+        color: var(--color-1);
     }
 </style>

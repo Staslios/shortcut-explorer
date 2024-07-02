@@ -1,10 +1,14 @@
 <div>
-    <h3>No shortcut found!</h3>
+    <h3>Oops, no shortcut found!</h3>
     <p>
-        <i>Sorry new commands will arrive soon!</i>
+        <i>New commands will arrive soon!</i>
     </p>
 </div>
 
 <style>
+    h3 {
+        font-size: var(--size-5);
+        margin-bottom: 4px;
+    }
 
 </style>

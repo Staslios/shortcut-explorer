@@ -1,24 +1,24 @@
 <script>
-    import { searchedKey } from "../store/store.js";
+    import { searchedShortcuts } from "../store/store.js";
 
-    export const placeholder = 'Type something here'
+    export const placeholder = 'example: copy'
 </script>
 
 
 <input type='search'
-       bind:value={$searchedKey}
+       bind:value={$searchedShortcuts}
        placeholder={placeholder} />
 
 
 <style>
     input {
         border-radius: 8px;
+        min-width: 25vw;
         outline: none;
         font-size: var(--size-0);
-        box-shadow: 0 1px 1px 0 var(--col-6);
+        box-shadow: 0 1px 1px 0 var(--color-5);
         border: none;
-        padding: 6px 6px 6px 40px;
-        height: var(--size-6);
+        padding: 8px 6px 8px 40px;
         background: url('public/search.svg') no-repeat 4%;
         transition: transform .15s;
     }

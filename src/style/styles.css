@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* project variables*/
+:root {
+    --color-1: #3E333F;
+    --color-2: #fb0000;
+    --color-3: #F0E19E;
+    --color-4: #a6a5a5;
+    --color-5: #8e8e8e;
+
+    --size-0: 14px;
+    --size-1: 16px;
+    --size-2: 18px;
+    --size-3: 20px;
+    --size-4: 22px;
+    --size-5: 26px;
+    --size-6: 32px;
+}
+
+/* minimal settings */
+html {
+    color: var(--color-1);
+}

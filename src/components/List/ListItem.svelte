@@ -1,59 +1,61 @@
 <script>
-    export let desc = '';
+    export let title = '';
     export let keys = [];
+    import { pressedKeys } from "../../store/store.js";
+
 </script>
 
 <li>
-    <h3>{desc}</h3>
+    <h3>{title}</h3>
     <div>
         {#each keys as key (key)}
-            <span>{key}</span>
+            <span class:selected={$pressedKeys.find(item => item.toLowerCase() === key.toLowerCase())}>
+                {key}
+            </span>
         {/each}
     </div>
 </li>
 
 <style>
     li {
-        border: 1px solid var(--col-6);
+        border: 1px solid var(--color-5);
         border-radius: 6px;
-        padding: 12px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        justify-content: center;
+        box-shadow: 1px 1px 1px var(--color-4);
     }
 
     h3 {
-        font-size: 36px;
-        margin: 6px 0;
-        text-transform: capitalize;
+        font-size: var(--size-4);
+        white-space: nowrap;
     }
 
     div {
-        font-size: 26px;
+        font-size: var(--size-0);
         display: flex;
         justify-content: left;
         align-items: center;
-        gap: 40px;
-        margin: 6px 0;
+        gap: 28px;
     }
 
     span {
         display: inline-block;
         text-transform: capitalize;
         min-width: 50px;
-        font-size: 20px;
         text-align: center;
         padding: 8px;
         border-radius: 4px;
         border: 1px solid lightgray;
         box-shadow: 2px 2px 0 1px lightgray;
+        transition: color .2s, background-color .2s, box-shadow .2s;
     }
 
-    span:not(:last-child):after {
-        content: '+';
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        display: inline-block;
-        position: absolute;
-        margin-left: 10px;
+    .selected {
+        color: white;
+        background-color: var(--color-1);
+        box-shadow: none;
     }
 </style>

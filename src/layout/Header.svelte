@@ -20,9 +20,9 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        border-bottom: 1px solid var(--col-4);
-        box-shadow: 1px 1px 1px var(--col-4);
-        padding: 10px 10px;
+        border-bottom: 1px solid var(--color-4);
+        box-shadow: 1px 1px 1px var(--color-4);
+        padding: 14px;
     }
 
     .head-left {
@@ -36,6 +36,8 @@
     }
 
     a {
-        text-decoration: none;
+        @media (max-width: 820px) {
+            display: none;
+        }
     }
 </style>

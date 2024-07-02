@@ -1,18 +1,22 @@
 export default [
   {
     keys: ['ctrl', 'c'],
-    desc: "Copy",
+    title: "Copy",
   },
   {
     keys: ['ctrl', 'v'],
-    desc: "Paste"
+    title: "Paste"
   },
   {
     keys: ['ctrl', 'x'],
-    desc: "Cut"
+    title: "Cut"
   },
   {
     keys: ['windows', 'l'],
-    desc: "Lock computer"
+    title: "Lock computer"
+  },
+  {
+    keys: ['windows', 'i'],
+    title: 'System settings'
   }
 ]
